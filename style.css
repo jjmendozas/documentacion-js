@@ -1,0 +1,94 @@
+*{
+    font-family: 'Open Sans', arial;
+    box-sizing: border-box;
+}
+
+/* ESTILOS NAVBAR */
+#navbar{
+    background-color: bisque;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+    border-right: 0.2em solid rgb(152, 48, 48);
+}
+/* titulo navbar */
+.header-nav{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 15px;
+}
+#navbar ul{
+    height: 88%;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+#navbar ul li:not(:last-child){
+    border-bottom: 1px solid;
+}
+#navbar ul li:first-child{
+    border-top: 1px solid;
+}
+#navbar ul a{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 25px;
+}
+
+/* ESTILO CUERPO MAIN */
+#main-doc{
+    position: relative;
+    margin-left: 300px;
+    padding-left: 20px;
+    padding-right: 10px;
+    max-width: 4100px
+}
+/* titulos */
+.section-title{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+section p{
+    padding-left: 20px;
+}
+section ul{
+    padding-left: 80px;
+}
+section li{
+    padding: 8px;
+}
+code{
+    background-color: rgb(207, 241, 229);
+    display: block;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* MEDIA QUERIE */
+@media screen and (max-width:768px) {
+    #navbar{
+        width: 100%;
+        position: static;
+        height: 240px;
+        border-right: none;
+        /* border: 1px solid red; */
+    }
+    #navbar ul{
+        height: 76%;     
+        border: 1px solid rgb(62, 62, 109);   
+    }
+    #main-doc{
+        position: relative;
+        margin-left: 0;
+    }
+}
